@@ -1,14 +1,27 @@
 package net.iessanclemente.dapw.katas.fizzbuzz.tests;
 
 import static org.junit.Assert.*;
+import net.iessanclemente.dapw.katas.fizzbuzz.FizzBuzz;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class TestFizzBuzz {
 
-	@Test
-	public void test() {
-		fail("Not yet implemented");
+	private FizzBuzz fb;
+
+	@Before
+	public void setUp() throws Exception {
+		fb = new FizzBuzz();
 	}
 
+	/**
+	 * Comprueba si devuelve "fizz" cuando el numero es divible por 3
+	 * Pasamos el 3, ya que sabemos que cumple la condición
+	 */
+	@Test
+	public void fizzWhenDivisibleBy3() {
+		String three = fb.convert(3);
+		assertEquals("Fizz", three);
+	}
 }
