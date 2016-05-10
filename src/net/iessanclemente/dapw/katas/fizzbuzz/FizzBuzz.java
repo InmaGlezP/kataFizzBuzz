@@ -13,8 +13,11 @@ public class FizzBuzz {
 	public String convert(int number) {
 
 		String conversion = "";
-		if (number % 3 == 0)
-			conversion = "Fizz";
+		if(number % 3 == 0 && number % 5 == 0)
+			conversion = "FizzBuzz";
+		
+		else if(number % 3 == 0)
+			conversion= "Fizz";
 		
 		else if(number % 5 == 0)
 			conversion= "Buzz";

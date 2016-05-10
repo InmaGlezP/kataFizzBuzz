@@ -34,4 +34,14 @@ public class TestFizzBuzz {
 		String five = fb.convert(5);
 		assertEquals("Buzz",five);
 	}
+	
+	/**
+	 * Comprueba si devuelve "fizzbuzz" cuando el numero es divible por 3 y por 5
+	 * Pasamos el 15, ya que sabemos que cumple la condición
+	 */
+	@Test
+	public void fizzbuzzWhenDivisibleBy3and5() {
+		String fifteen = fb.convert(15);
+		assertEquals("FizzBuzz",fifteen);
+	}
 }
