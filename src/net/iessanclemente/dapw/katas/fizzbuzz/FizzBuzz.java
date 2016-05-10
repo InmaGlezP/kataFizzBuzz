@@ -6,8 +6,7 @@ public class FizzBuzz {
 	 * Lee un numero y lo trata para devolver una "traduccion" segun un
 	 * determinado criterio
 	 * 
-	 * @param number
-	 *            El número enviado
+	 * @param number El número enviado
 	 * @return conversion La traduccion del numero segun las normas dadas
 	 * 
 	 */
@@ -16,8 +15,12 @@ public class FizzBuzz {
 		String conversion = "";
 		if (number % 3 == 0)
 			conversion = "Fizz";
+		
+		else if(number % 5 == 0)
+			conversion= "Buzz";
 		else
 			conversion = String.valueOf(number);
+		
 		return conversion;
 	}
 

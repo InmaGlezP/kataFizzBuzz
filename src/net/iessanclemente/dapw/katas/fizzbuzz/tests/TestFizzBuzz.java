@@ -24,4 +24,14 @@ public class TestFizzBuzz {
 		String three = fb.convert(3);
 		assertEquals("Fizz", three);
 	}
+	
+	/**
+	 * Comprueba si devuelve "buzz" cuando el numero es divible por 5
+	 * Pasamos el 5, ya que sabemos que cumple la condición
+	 */
+	@Test
+	public void buzzWhenDivisibleBy5() {
+		String five = fb.convert(5);
+		assertEquals("Buzz",five);
+	}
 }
