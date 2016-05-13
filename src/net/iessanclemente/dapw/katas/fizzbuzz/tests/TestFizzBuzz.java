@@ -55,4 +55,15 @@ public class TestFizzBuzz {
 		String three = fb.convert(13);
 		assertEquals("Fizz",three);
 	}
+	
+	/**
+	 * Comprueba si devuelve "buzz" cuando el 5 está en el numero
+	 * Pasamos el 52, ya que sabemos que cumple la condición
+	 */
+	@Test
+	public void fizzbuzzWhenNumberContainsDigit5() {
+		String fiftyone = fb.convert(52);
+		assertEquals("Buzz",fiftyone);
+
+	}
 }
