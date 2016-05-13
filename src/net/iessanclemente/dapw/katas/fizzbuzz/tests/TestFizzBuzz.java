@@ -44,4 +44,10 @@ public class TestFizzBuzz {
 		String fifteen = fb.convert(15);
 		assertEquals("FizzBuzz",fifteen);
 	}
+	
+	@Test
+	public void fizzbuzzWhenNumberContainsDigit5() {
+		String fiftyone = fb.convert(52);
+		assertEquals("Buzz",fiftyone);
+	}
 }

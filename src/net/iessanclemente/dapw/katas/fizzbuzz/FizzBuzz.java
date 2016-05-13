@@ -12,19 +12,26 @@ public class FizzBuzz {
 	 */
 	public String convert(int number) {
 
-		String conversion = "";
+		String numberString = String.valueOf(number);
+		char[] digits = numberString.toCharArray();
+		
 		if(number % 3 == 0 && number % 5 == 0)
-			conversion = "FizzBuzz";
+			numberString = "FizzBuzz";
 		
 		else if(number % 3 == 0)
-			conversion= "Fizz";
+			numberString= "Fizz";
 		
 		else if(number % 5 == 0)
-			conversion= "Buzz";
-		else
-			conversion = String.valueOf(number);
+			numberString= "Buzz";
+		else{
+			
+			for(int i=0; i<digits.length;i++){
+				if(digits[i]==53)
+					numberString = "Buzz";							
+			}
+		}
 		
-		return conversion;
+		return numberString;
 	}
 
 }
